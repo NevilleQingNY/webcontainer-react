@@ -84,7 +84,7 @@ const Projects = () => {
             const { FitAddon } = await import('@xterm/addon-fit');
 
             // 导入 CSS
-            await import('@xterm/xterm/css/xterm.css');
+            await import('@xterm/xterm/css/xterm.css' as string);
 
             const fitAddon = new FitAddon();
             terminal = new Terminal({
