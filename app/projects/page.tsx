@@ -10,11 +10,11 @@ const Projects = () => {
     const terminalRef = useRef<HTMLDivElement>(null);
     const webcontainerRef = useRef<any>(null);
 
-    const writeIndexJS = async (content: string) => {
-        if (webcontainerRef.current) {
-            await webcontainerRef.current.fs.writeFile('/src/App.jsx', content);
-        }
-    };
+    // const writeIndexJS = async (content: string) => {
+    //     if (webcontainerRef.current) {
+    //         await webcontainerRef.current.fs.writeFile('/src/App.jsx', content);
+    //     }
+    // };
 
     const startShell = async (terminal: any) => {
         if (!webcontainerRef.current) return;
